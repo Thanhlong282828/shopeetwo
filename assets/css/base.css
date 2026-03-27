@@ -8,13 +8,15 @@ html {
   font-family: "roboto", sans-serif;
   box-sizing: border-box;
 }
+
 .img-qr__cottrai,
 .imglist__tree,
 .shopee-svg-icon__list-top,
 .shopee-svg-icon__list,
 .logo__search,
 .mennuu,
-.con__imglist__tree {
+.con__imglist__tree
+ {
   border: 3px solid transparent;
   background:
     linear-gradient(rgba(255, 246, 161, 0.2), rgba(197, 197, 197, 0.2))
@@ -32,7 +34,28 @@ html {
   background-size: 200% 100%;
   animation: borderRun 2.5s linear infinite;
 }
+.btn-mini__left-one {
+  border: 2px solid transparent; /* quan trọng */
+  border-radius: 6px;
+  
+  background:
+   linear-gradient(
+    210deg,
+    rgba(254, 223, 156, 1.4),
+    rgba(3, 2, 2, 1.6)) padding-box,
+    linear-gradient(
+      90deg,
+      rgb(255, 250, 183),
+      rgb(162, 228, 243),
+      rgb(241, 184, 253),
+      
+      rgb(243, 243, 245)
+    ) border-box;
 
+  background-size: 100% 100%, 200% 100%;
+  background-position: 0 0, 0 0;
+  animation: borderRun 2.5s linear infinite;
+}
 @keyframes borderRun {
   0% {
     background-position: 0% 0;
@@ -43,7 +66,7 @@ html {
 }
 .logo__shopee,
 .meunu__thu-nghiem,
-.header__cart-icon {
+.header__cart-icon ,.logan-sstwo{
   animation: colorRun 3s linear infinite;
 }
 
@@ -60,6 +83,9 @@ html {
   100% {
     filter: brightness(3) drop-shadow(0 0 8px #97eeff);
   }
+}
+a {
+  text-decoration: none;
 }
 * {
   box-sizing: inherit;
@@ -101,4 +127,29 @@ html {
   100% {
     opacity: 0;
   }
+}
+.sstwo-body{
+  
+}
+.body-sstwo{
+  display: flex;
+    margin-top: 20px;
+
+}
+.sstwo-body__allleft{
+width: 18%;
+margin: 0 3px;
+padding: 5px 5px 26px;
+border-left: 1px solid rgba(166, 164, 161,0.5);
+border-right: 1px solid rgba(166, 164, 161,0.5);
+border-radius:28px;
+}
+.sstwo-body__allright{
+  width: 80%;
+  margin: 0 3px;
+  padding: 5px 5px 26px;
+  border-left: 1px solid rgba(166, 164, 161,0.5);
+  border-right: 1px solid rgba(13, 9, 2, 0.5);
+  border-radius:28px;
+
 }
